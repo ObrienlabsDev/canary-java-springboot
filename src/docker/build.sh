@@ -8,7 +8,8 @@
 echo "set MYSQL_ROOT_PASSWORD"
 
 #TAG=0.0.2-ia64
-TAG=0.0.1-arm
+#TAG=0.0.1-arm
+TAG=0.0.1-ia64
 #SERVER=192.168.0.105
 SERVER=127.0.0.1
 
