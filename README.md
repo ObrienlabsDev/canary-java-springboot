@@ -1,5 +1,7 @@
 # canary-java-springboot
 Java Spring boot canary for testing REST workflows
+- https://github.com/ObrienlabsDev/canary-java-springboot/issues/1
+- https://github.com/ObrienlabsDev/canary-java-springboot
 
 # Usage
 
