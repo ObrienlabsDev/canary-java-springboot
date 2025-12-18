@@ -8,6 +8,8 @@ steps:
     dir: '$_CODE_DIR'
     args: 
       - 'build'
+      - '-f'
+      - 'DockerFile'
       - '-t'
       - '$_AR_HOSTNAME/$PROJECT_ID/$_AR_REPO/$_IMAGE_NAME:$COMMIT_SHA'
       - '-t'
