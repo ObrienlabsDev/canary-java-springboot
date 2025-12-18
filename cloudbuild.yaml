@@ -23,7 +23,7 @@ steps:
     id: 'docker-push'
 substitutions:
   _AR_HOSTNAME: 'northamerica-northeast1-docker.pkg.dev' 
-  _AR_REPO: 'canary-java-sprinboot'                   
+  _AR_REPO: 'canary-java-springboot'                   
   _IMAGE_NAME: 'canary-java-springboot'  
   _CODE_DIR: 'canary-java-springboot'       
 images:
