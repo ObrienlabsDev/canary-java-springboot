@@ -3,8 +3,10 @@
 #FROM arm64v8/eclipse-temurin:21-jdk-ubi9-minimal
 # https://hub.docker.com/r/amd64/eclipse-temurin/
 FROM amd64/eclipse-temurin:21-jdk-ubi9-minimal
+FROM chainguard/jdk:latest
 
-ARG USERVICE_HOME=/opt/app/
+#ARG USERVICE_HOME=/opt/app/
+ARG USERVICE_HOME=~/
 
 # Build up the deployment folder structure
 RUN mkdir -p $USERVICE_HOME
@@ -13,5 +15,5 @@ ADD canary-*.jar $USERVICE_HOME/ROOT.jar
 #ADD application_default_credentials.json application_default_credentials.json
 
 #ARG GOOGLE_APPLICATION_CREDENTIALS=application_default_credentials.json
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/opt/app/ROOT.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","~/ROOT.jar"]
 
