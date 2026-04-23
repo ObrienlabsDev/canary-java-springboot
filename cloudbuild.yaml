@@ -1,5 +1,6 @@
 steps:
-  - name: 'maven:3.9-eclipse-temurin-21'
+ # - name: 'maven:3.9-eclipse-temurin-21'
+  - name: 'chainguard/jdk:latest-dev'
     entrypoint: 'mvn'
     dir: '$_CODE_DIR'
     args: ['clean', 'install', '-U', '-DskipTests=false']
