@@ -16,6 +16,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import dev.obrienlabs.canary.service.ApplicationServiceLocal;
 
+
+// spring boot 3
+//import jakarta.servlet.http.HttpServletRequest;
+
+//spring boot 2.x
+//import javax.servlet.http.HttpServletRequest;
+//spring boot 3+
+//import jakarta.servlet.http.HttpServletRequest;
+
 // change to RestController
 @Controller
 @RequestMapping("/api")
