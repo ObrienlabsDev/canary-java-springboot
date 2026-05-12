@@ -1,6 +1,7 @@
 steps:
- # - name: 'maven:3.9-eclipse-temurin-21'
-  - name: 'chainguard/jdk:latest-dev'
+  - name: 'maven:3.9-eclipse-temurin-21'
+ # change your mvn workspace first to ~/
+ # - name: 'chainguard/maven'
     entrypoint: 'mvn'
     dir: '$_CODE_DIR'
     args: ['clean', 'install', '-U', '-DskipTests=false']
